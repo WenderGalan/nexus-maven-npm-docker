@@ -12,7 +12,7 @@ Informações do NPM:
 
 Informações do Docker:
 - Necessário expor as portas que foram configuradas dentro do repositório do mesmo.
-- Necessário informar registros inseguros caso seja necessário funcionar sem SSL, no caso é necessário informar dentro do arquivo ```daemon.json``` que ficar localizado no windows dentro de ```/usuario/.docker/daemon.json``` ou no linux em ```/etc/docker.daemon.json```algo simular a isso:
+- Necessário informar registros inseguros caso seja necessário funcionar sem SSL, é preciso também informar dentro do arquivo ```daemon.json``` que ficar localizado no windows dentro de ```/usuario/.docker/daemon.json``` ou no linux em ```/etc/docker.daemon.json```algo similar a isso:
 
   ![img.png](insecure_registries.png)
 - Necessário autenticar com o comando ``docker login -u admin -p admin123 https|http://dominio:porta``
